@@ -29,5 +29,5 @@ Este é um projeto de portfólio web pessoal desenvolvido para destacar informa�
 
 Para dúvidas ou sugestões, entre em contato:  
 - **Email:** [gicristina.scastro@gmail.com](mailto:gicristina.scastro@gmail.com)  
-- **GitHub:** [seu-usuario](https://github.com/GiCCastro)  
-- **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/giovana-castro-496562238/)  
+- **GitHub:** [GiCCastro](https://github.com/GiCCastro)  
+- **LinkedIn:** [Giovana Castro](https://www.linkedin.com/in/giovana-castro-496562238/)  
