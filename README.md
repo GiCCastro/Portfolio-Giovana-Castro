@@ -4,11 +4,11 @@ Este é um projeto de portfólio web pessoal desenvolvido para destacar informa�
 
 ## 🚀 Funcionalidades  
 
-- **Apresentação Pessoal:** Mostra sua foto, nome, profissão, localização, telefone e email de contato.  
+- **Apresentação Pessoal:** Mostra foto, nome, profissão, localização, telefone e email de contato.  
 - **Habilidades:** Lista habilidades técnicas e interpessoais.  
-- **Idiomas:** Apresenta os idiomas que você domina com indicação de nível.  
+- **Idiomas:** Apresenta os idiomas.  
 - **Portfólio de Projetos:** Mostra projetos realizados, com links diretos para visualização e repositórios no GitHub.  
-- **Experiência Profissional:** Detalha seu histórico profissional e responsabilidades em cada cargo.  
+- **Experiência Profissional:** Detalha histórico profissional e responsabilidades em cada cargo.  
 - **Acordeões Dinâmicos:** As seções podem ser expandidas e recolhidas para melhor navegação.  
 - **Design Responsivo:** O site é totalmente responsivo e se adapta a qualquer tamanho de tela.  
 - **Carregamento de Dados Dinâmico:** Informações carregadas via JSON para facilitar a atualização de conteúdo.  
@@ -24,11 +24,6 @@ Este é um projeto de portfólio web pessoal desenvolvido para destacar informa�
   - Interatividade com os acordeões.  
   - Fetch API para buscar dados de um arquivo JSON hospedado no repositório da DIO.  
 - **GitHub** para controle de versão e hospedagem do código.
-
-## 🎨 Capturas de Tela  
-
-### Página Inicial  
-![Página Inicial](https://i.postimg.cc/JzRvKQ4M/portf-lio.png)  
 
 ## 📧 Contato  
 
