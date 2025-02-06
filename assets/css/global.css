@@ -8,10 +8,33 @@
     src: url('../fonts/neue-machina-regular.otf');
 }
 
-body {
-    background-color: #000;
+.body {
+    /* background-color: #000; */
     color: #fff;
+    background: linear-gradient(
+        to bottom right,
+        #eb7db5,
+        #772d93,
+        black,
+        black, 
+        #772d93,
+        #eb7db5
+      );
 }
+
+/* .body.active{
+    background: linear-gradient(
+        to bottom right,
+        #FFB6C1,
+        #ADD8E6,
+        #90EE90 ,
+        #90EE90,
+        #ADD8E6,
+        #FFB6C1
+      );
+
+} */
+
 
 a {
     text-decoration: none;
@@ -28,9 +51,9 @@ a:hover{
     border-radius: 1rem;
 }
 
-.main::before, .main::after {
+/* .main::before, .main::after {
     content: '';
-    background-image: url('../img/background.svg');
+    background-image: url('../img/background.svg'); 
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -49,7 +72,7 @@ a:hover{
     bottom: 0;
     right: 0;
     transform: rotate(180deg)
-}
+} */
 
 
 @media only screen and (min-width: 768px) {
