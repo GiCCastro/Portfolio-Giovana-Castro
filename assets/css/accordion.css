@@ -1,21 +1,33 @@
-.accordion {
+.main .accordion {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
     border: 1px solid #fff;
     border-radius: 1rem;
-    transition: .25s;
+    transition: background-color .25s, border .5s;
+
 }
 
-.accordion.open,
-.accordion:hover {
+.main.active .accordion{
+    border: 1px solid #131515;
+}
+
+.main .accordion.open,
+.main .accordion:hover {
     background-color: #55569E;
     border-color: #55569E;
 }
 
 
-.accordion .trigger {
+.main.active .accordion.open,
+.main.active .accordion:hover {
+    background-color: #4ba3c3;
+    border-color: #4ba3c3;
+}
+
+
+.main .accordion .trigger {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +38,15 @@
     background-color: transparent;
     color: #fff;
     border: none;
+    transition: color .5s;
+
 }
+
+.main.active .accordion .trigger {
+    color: #131515;
+
+}
+
 
 .accordion .trigger h2{
     margin: 0;
@@ -38,7 +58,7 @@
     cursor: pointer;
 }
 
-.accordion .trigger::after {
+.main .accordion .trigger::after {
     content: '';
     display: inline-block;
     width: 1.5rem;
@@ -46,7 +66,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../img/icons/arrow-top.svg');
-    transition: .25s;
+    transition: filter .5s, transform .25s;
+}
+
+.main.active .accordion .trigger::after{
+    filter: invert(1);
 }
 
 .accordion.open .trigger::after {

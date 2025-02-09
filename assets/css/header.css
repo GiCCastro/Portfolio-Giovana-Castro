@@ -1,3 +1,7 @@
+:root {
+    --custom-filter: invert(54%) sepia(52%) saturate(432%) hue-rotate(158deg) brightness(98%) contrast(90%);
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -6,11 +10,14 @@
 }
 
 
-
 .header .photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+ .main.active .photo{
+    border: 1px solid #131515;
 }
 
 .header .title {
@@ -24,6 +31,7 @@
     align-items: flex-start;
     width: 100%;
 }
+
 
 .information p {
     display: flex;
@@ -43,41 +51,77 @@
     margin-right: .5rem;
 }
 
-.information .job::before {
+.main .information .job::before {
     background-image: url('../img/icons/job.svg');
 }
 
-.information .location::before {
+.main.active .information .job::before {
+    filter: var(--custom-filter);
+}
+
+.main .information .location::before {
     background-image: url('../img/icons/location.svg');
 }
 
-.information .phone::before {
+.main.active .information .location::before {
+    filter: var(--custom-filter);
+}
+
+.main .information .phone::before {
     background-image: url('../img/icons/phone.svg');
 }
 
-.information .email::before {
+.main.active .information .phone::before {
+    filter: var(--custom-filter);
+}
+
+.main .information .email::before {
     background-image: url('../img/icons/email.svg');
 }
 
-@media only screen and (min-width: 768px){
-    
+.main.active .information .email::before {
+    filter: var(--custom-filter);
+}
+
+.main .information .linkedin::before {
+    background-image: url('../img/icons/linkedin.svg');
+}
+
+.main.active .information .linkedin::before {
+    filter: var(--custom-filter);
+}
+
+.main .information .github::before {
+    background-image: url('../img/icons/github-header.svg');
+}
+
+.main.active .information .github::before {
+    filter: var(--custom-filter);
+}
+
+@media only screen and (min-width: 768px) {
+
     .header {
         display: grid;
-        grid-template-areas: 
-        "photo title"
-        "photo information"
+        grid-template-areas:
+            "photo title "
+            "photo information"
         ;
     }
+
     .header .photo {
         grid-area: photo;
         margin: 0 auto;
     }
+
     .header .title {
         grid-area: title;
         text-align: start;
         max-width: 210px;
     }
+
     .header .information {
         grid-area: information;
     }
+
 }

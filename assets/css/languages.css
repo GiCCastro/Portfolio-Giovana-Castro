@@ -17,7 +17,7 @@
     font-size: 1rem;
 }
 
-.languages li::before {
+.main .languages li::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -26,4 +26,8 @@
     background-size: contain;
     background-image: url('../img/icons/check.svg');
     margin-right: .5rem;
+}
+
+.main.active .languages li::before {
+    filter: invert(1);
 }

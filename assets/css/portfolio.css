@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: 1rem 0;
+    gap: .5rem;
 }
 
 .portfolio li h3 {
@@ -24,7 +25,9 @@
     margin-bottom: .5rem;
 }
 
-.portfolio li h3.github::before {
+
+
+.main .portfolio li h3.github::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -33,4 +36,8 @@
     background-size: contain;
     background-image: url('../img/icons/github.svg');
     margin-right: .5rem;
+}
+
+.main.active .portfolio li h3.github::before{
+    filter: invert(1);
 }

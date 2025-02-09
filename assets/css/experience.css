@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.experience li .period::before {
+.main .experience li .period::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -25,4 +25,8 @@
     background-size: contain;
     background-image: url('../img/icons/calendar.svg');
     margin-right: .5rem;
+}
+
+.main.active .experience li .period::before{
+    filter: invert(1);
 }

@@ -14,11 +14,23 @@ function updateProfileInfo(profileData) {
 
     const phone = document.getElementById('profile.phone')
     phone.innerText = profileData.phone
-    phone.href = `tel:${profileData.phone}`
+    phone.href = `https://api.whatsapp.com/send?phone=${profileData.whatsapp}`
 
     const email = document.getElementById('profile.email')
     email.innerText = profileData.email
     email.href = `mailto:${profileData.email}`
+
+    const linkedin = document.getElementById('profile.linkedin')
+    linkedin.innerText = profileData.name
+    linkedin.href = profileData.linkedin
+    linkedin.target = "_blank"
+    linkedin.rel = "noopener noreferrer"
+
+    const github = document.getElementById('profile.github')
+    github.innerText = profileData.github
+    github.href = profileData.github
+    github.target = "_blank"
+    github.rel = "noopener noreferrer"
 }
 
 function updateSoftSkills(profileData) {
@@ -42,8 +54,8 @@ function updatePortfolio(profileData) {
         return `
     <li>
     <h3${project.github ? ' class="github"' : ''}>${project.name}</h3>
-    <a href="${project.url}" target="_blank">${project.url}</a>
-    <a href="${project.page}" target="_blank">Github Pages</a>
+    <a href="${project.url}" target="_blank"  rel="noopener noreferrer">${project.url}</a>
+    <a href="${project.page}" target="_blank"  rel="noopener noreferrer">Deploy <i class="fas fa-globe"></i></a>
     </li>`
     }).join('')
 }

@@ -1,0 +1,14 @@
+.logo-dio {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .svg-icon {
+    max-width: 100px;
+    width: 100%;
+    transition: color .5s;
+}
+
+.main.active .svg-icon {
+    color: #000; 
+}
